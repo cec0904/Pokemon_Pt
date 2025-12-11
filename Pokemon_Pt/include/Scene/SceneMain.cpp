@@ -10,8 +10,8 @@
 #include "../Object/ObjectSpawnPoint.h"
 #include "../UI/UserWidget/MainWidget.h"
 //#include "../UI/UserWidget/Pedometer.h"
-//#include "../Object/NPCManager.h"
-//#include "../Object/NPCHiker.h"
+#include "../Pokemon/Npc/NpcBase.h"
+#include "../Pokemon/Npc/NpcHiker.h"
 #include "../Object/BackObject.h"
 #include "../Object/TileMapObj.h"
 
@@ -31,13 +31,23 @@ bool CSceneMain::Init()
 	}
 
 	///////////// 사용할 머티리얼 미리 만든다!!
-	mAssetManager->CreateMaterial("Monster1");
+	/*mAssetManager->CreateMaterial("Monster1");
 
 	CMaterial* material = mAssetManager->FindMaterial("Monster1");
 
 	material->SetPixelShader("DefaultMaterialShader");
 	material->SetSamplerType(ETextureSamplerType::Linear);
-	material->AddTexture("MonsterTex", TEXT("Texture/Porori.png"), 0);
+	material->AddTexture("MonsterTex", TEXT("Texture/Porori.png"), 0);*/
+
+	mAssetManager->CreateMaterial("Npc");
+
+	CMaterial* material = mAssetManager->FindMaterial("Npc");
+
+	material->SetPixelShader("DefaultMaterialShader");
+	material->SetSamplerType(ETextureSamplerType::Linear);
+	material->AddTexture("NpcHiker", TEXT("Texture/Pokemon/Npc/Hiker/Hiker_2.png"), 0);
+
+
 
 	///////////// 사용할 사운드도 미리 추가한다.
 	mAssetManager->LoadSound("Hit", "Effect", false, "Sound/Fire1.wav");
@@ -57,6 +67,12 @@ bool CSceneMain::Init()
 
 	if (Player == nullptr)
 		return false;
+
+
+	CNpcHiker* pHiker = CreateObj<CNpcHiker>("Hiker");
+	pHiker->SetWorldPos(-700.f, -200.f);
+
+
 
 	//CGunnerMonster* Monster1 = CreateObj<CGunnerMonster>("GunnerMonster2");
 	//Monster1->SetWorldPos(400.f, 300.f);

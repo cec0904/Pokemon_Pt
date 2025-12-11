@@ -243,7 +243,8 @@ namespace ECollisionChannel
 		Monster,		//2
 		PlayerAttack,	//3
 		MonsterAttack,	//4
-		End				//5
+		Npc,			//5
+		End				//6
 	};
 }
 

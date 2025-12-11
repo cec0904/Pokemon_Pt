@@ -1,6 +1,14 @@
 #pragma once
 #include "../../Object/SceneObject.h"
 
+enum class ENpcState
+{
+	Idle,
+	Move,
+	Battle,
+	End
+};
+
 class CNpcBase :
 	public CSceneObject
 {
@@ -27,8 +35,23 @@ protected:
 
 	float mSpeed = 200.f;
 
-	FVector3D StartPos;
-	FVector3D TargetPos;
+	ENpcState mState;
+
+public:
+	ENpcState GetState() const
+	{
+		return mState;
+	}
+
+	void SetState(ENpcState State)
+	{
+		mState = State;
+	}
+
+protected:
+	virtual void Idle(float DeltaTime);
+	virtual void Move(float DeltaTime);
+	virtual void Battle(float DeltaTime);
 
 private:
 	void CollisionNpc(const FVector3D& HitPont, class CColliderBase* Dest);
