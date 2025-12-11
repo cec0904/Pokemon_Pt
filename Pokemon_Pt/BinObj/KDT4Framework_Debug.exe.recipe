@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>E:\KDT4\branch\KDT4Framework\KDT4Framework\KDT4Framework\Bin\KDT4Framework_Debug.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles>
+    <ContentFile>
+      <FullPath>E:\KDT4\branch\KDT4Framework\KDT4Framework\KDT4Framework\Bin\ColorMesh.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>E:\KDT4\branch\KDT4Framework\KDT4Framework\KDT4Framework\Bin\Mesh.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>E:\KDT4\branch\KDT4Framework\KDT4Framework\KDT4Framework\Bin\Sprite.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>E:\KDT4\branch\KDT4Framework\KDT4Framework\KDT4Framework\Bin\TileMap.cso</FullPath>
+    </ContentFile>
+    <ContentFile>
+      <FullPath>E:\KDT4\branch\KDT4Framework\KDT4Framework\KDT4Framework\Bin\UI.cso</FullPath>
+    </ContentFile>
+  </ContentFiles>
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
