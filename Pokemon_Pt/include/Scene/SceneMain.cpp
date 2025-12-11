@@ -12,6 +12,7 @@
 //#include "../UI/UserWidget/Pedometer.h"
 #include "../Pokemon/Npc/NpcBase.h"
 #include "../Pokemon/Npc/NpcHiker.h"
+#include "../Pokemon/Npc/NpcProfessor.h"
 #include "../Object/BackObject.h"
 #include "../Object/TileMapObj.h"
 
@@ -47,6 +48,10 @@ bool CSceneMain::Init()
 	material->SetSamplerType(ETextureSamplerType::Linear);
 	material->AddTexture("NpcHiker", TEXT("Texture/Pokemon/Npc/Hiker/Hiker_2.png"), 0);
 
+	material->SetPixelShader("DefaultMaterialShader");
+	material->SetSamplerType(ETextureSamplerType::Linear);
+	material->AddTexture("NpcProfessor", TEXT("Texture/Pokemon/Npc/Professor/Professor.png"), 0);
+
 
 
 	///////////// 사용할 사운드도 미리 추가한다.
@@ -71,6 +76,9 @@ bool CSceneMain::Init()
 
 	CNpcHiker* pHiker = CreateObj<CNpcHiker>("Hiker");
 	pHiker->SetWorldPos(-700.f, -200.f);
+
+	CNpcProfessor* pProfessor = CreateObj<CNpcProfessor>("Professor");
+	pProfessor->SetWorldPos(-700.f, 0.f);
 
 
 

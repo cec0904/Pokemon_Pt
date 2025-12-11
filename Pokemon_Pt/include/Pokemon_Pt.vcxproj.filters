@@ -570,6 +570,15 @@
     <ClCompile Include="Pokemon\Pokemon\PokemonBase.cpp">
       <Filter>Pokemon\01.Pokemon</Filter>
     </ClCompile>
+    <ClCompile Include="Pokemon\Pokemon\Pokemon_ChimChar.cpp">
+      <Filter>Pokemon\01.Pokemon\01.List</Filter>
+    </ClCompile>
+    <ClCompile Include="Pokemon\Pokemon\Pokemon_PipLup.cpp">
+      <Filter>Pokemon\01.Pokemon\01.List</Filter>
+    </ClCompile>
+    <ClCompile Include="Pokemon\Pokemon\Pokemon_TurtWig.cpp">
+      <Filter>Pokemon\01.Pokemon\01.List</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameManager.h">
@@ -952,6 +961,15 @@
     </ClInclude>
     <ClInclude Include="Pokemon\Pokemon\PokemonBase.h">
       <Filter>Pokemon\01.Pokemon</Filter>
+    </ClInclude>
+    <ClInclude Include="Pokemon\Pokemon\Pokemon_ChimChar.h">
+      <Filter>Pokemon\01.Pokemon\01.List</Filter>
+    </ClInclude>
+    <ClInclude Include="Pokemon\Pokemon\Pokemon_PipLup.h">
+      <Filter>Pokemon\01.Pokemon\01.List</Filter>
+    </ClInclude>
+    <ClInclude Include="Pokemon\Pokemon\Pokemon_TurtWig.h">
+      <Filter>Pokemon\01.Pokemon\01.List</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
