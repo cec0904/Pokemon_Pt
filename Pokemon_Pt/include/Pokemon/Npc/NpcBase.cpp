@@ -35,7 +35,7 @@ CNpcBase::~CNpcBase()
 
 void CNpcBase::CollisionNpc(const FVector3D& HitPont, CColliderBase* Dest)
 {
-
+	 
 }
 
 void CNpcBase::CollisionNpcEnd(CColliderBase* Dest)
