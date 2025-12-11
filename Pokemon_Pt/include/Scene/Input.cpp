@@ -288,21 +288,53 @@ void CInput::UpdateMousePos(float DeltaTime)
 	// 기준은 좌상단.
 	ScreenToClient(mhWnd, &MousePT);
 
-	// 디바이스 비율
-	FVector2D Ratio = CDevice::GetInst()->GetResolutionRatio();
 	FResolution ViewportRS = CDevice::GetInst()->GetResolution();
+
+	// 듀얼 스크린을 위해 화면을 상/하 2개 뷰포트로 분할하므로, 실제 렌더링 영역
+	// (레터박스 적용 후) 기준으로 마우스 좌표를 다시 계산한다.
+	const float windowW = static_cast<float>(ViewportRS.Width);
+	const float windowH = static_cast<float>(ViewportRS.Height);
+
+	const float LogicalW = 256.f;
+	const float LogicalH = 384.f;
+
+	const float scaleX = windowW / LogicalW;
+	const float scaleY = windowH / LogicalH;
+	const float scale = (scaleX < scaleY) ? scaleX : scaleY;
+
+	const float viewW = LogicalW * scale;
+	const float viewH = LogicalH * scale;
+
+	const float offsetX = (windowW - viewW) * 0.5f;
+	const float offsetY = (windowH - viewH) * 0.5f;
+
+	// UI는 하단 뷰포트에만 그려지므로 해당 영역을 기준으로 좌표를 역변환한다.
+	const float uiOffsetX = offsetX;
+	const float uiOffsetY = offsetY + viewH * 0.5f;
+	const float uiViewW = viewW;
+	const float uiViewH = viewH * 0.5f;
 
 	FVector2D MousePos;
 
-	// 윈도우창에서의 마우스 좌표를 해상도 비율로 곱해서 인게임 Dx 해상도 상에서의 위치를 구해준다. 
-	MousePos.x = MousePT.x * Ratio.x;
-	MousePos.y = MousePT.y * Ratio.y;
+	// UI 뷰포트 밖이라면 충돌을 발생시키지 않기 위해 이전 프레임과의 이동만 초기화한다.
+	if (MousePT.x < uiOffsetX || MousePT.x > uiOffsetX + uiViewW ||
+		MousePT.y < uiOffsetY || MousePT.y > uiOffsetY + uiViewH)
+	{
+		MousePos.x = MousePos.y = -1.f;
+		mMouseMove = FVector2D();
+		mMouseCompute = false;
+	}
+	else
+	{
+		// 뷰포트 내부 좌표를 UI 논리 해상도(프로젝션 기준)로 환산한다.
+		const float localX = static_cast<float>(MousePT.x) - uiOffsetX;
+		const float localY = static_cast<float>(MousePT.y) - uiOffsetY;
 
-	// 해준 이유 : 윈도우는 Y좌표가 아래가 +
-	// DX에서는 Y좌표가 위가 + 이므로
-	// Y좌표는 반전을 시켜줘야한다. 
-	// 뷰포트 해상도를 이용해서 Y 좌표 반전 
-	MousePos.y = ViewportRS.Height - MousePos.y;
+		MousePos.x = localX * (ViewportRS.Width / uiViewW);
+
+		// DX에서는 Y가 위쪽 + 이므로 하단 뷰포트 높이를 기준으로 반전한다.
+		MousePos.y = ViewportRS.Height - (localY * (ViewportRS.Height / uiViewH));
+	}
 
 	//프로그램 시작 첫프레임
 	if (mMouseCompute)

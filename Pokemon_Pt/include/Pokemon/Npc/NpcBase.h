@@ -30,8 +30,6 @@ protected:
 	FVector3D StartPos;
 	FVector3D TargetPos;
 
-
-
 private:
 	void CollisionNpc(const FVector3D& HitPont, class CColliderBase* Dest);
 	void CollisionNpcEnd(class CColliderBase* Dest);
@@ -42,6 +40,11 @@ public:
 	{
 		mTarget = Target;
 	}
+
+public:
+	// 대사
+	void NpcScript();
+
 
 public:
 	virtual bool Init();

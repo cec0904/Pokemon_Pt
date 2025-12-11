@@ -229,6 +229,9 @@
     <Filter Include="FrameWork\10.UI\02.UserWidget\01.Main">
       <UniqueIdentifier>{a8e6bb5c-f81c-40f3-aadd-dac89938276a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pokemon\01.Pokemon\01.List">
+      <UniqueIdentifier>{37692a63-9f7f-4f7a-b499-6d9fc5b9b988}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -563,6 +566,9 @@
     </ClCompile>
     <ClCompile Include="Pokemon\Npc\NpcProfessor.cpp">
       <Filter>Pokemon\02.Npc</Filter>
+    </ClCompile>
+    <ClCompile Include="Pokemon\Pokemon\PokemonBase.cpp">
+      <Filter>Pokemon\01.Pokemon</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -943,6 +949,9 @@
     </ClInclude>
     <ClInclude Include="Pokemon\Npc\NpcProfessor.h">
       <Filter>Pokemon\02.Npc</Filter>
+    </ClInclude>
+    <ClInclude Include="Pokemon\Pokemon\PokemonBase.h">
+      <Filter>Pokemon\01.Pokemon</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

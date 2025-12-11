@@ -56,6 +56,7 @@ E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Object\TornadoBullet.cpp;E:\Pokemon\Pok
 E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Pokemon\Npc\NpcBase.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\NpcBase.obj
 E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Pokemon\Npc\NpcHiker.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\NpcHiker.obj
 E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Pokemon\Npc\NpcProfessor.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\NpcProfessor.obj
+E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Pokemon\Pokemon\PokemonBase.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\PokemonBase.obj
 E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\ProfileManager.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\ProfileManager.obj
 E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Render\BlendState.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\BlendState.obj
 E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Render\DepthStencilState.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\DepthStencilState.obj

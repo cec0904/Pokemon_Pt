@@ -199,6 +199,7 @@
     <ClCompile Include="Pokemon\Npc\NpcBase.cpp" />
     <ClCompile Include="Pokemon\Npc\NpcHiker.cpp" />
     <ClCompile Include="Pokemon\Npc\NpcProfessor.cpp" />
+    <ClCompile Include="Pokemon\Pokemon\PokemonBase.cpp" />
     <ClCompile Include="ProfileManager.cpp" />
     <ClCompile Include="Render\BlendState.cpp" />
     <ClCompile Include="Render\DepthStencilState.cpp" />
@@ -322,6 +323,7 @@
     <ClInclude Include="Pokemon\Npc\NpcBase.h" />
     <ClInclude Include="Pokemon\Npc\NpcHiker.h" />
     <ClInclude Include="Pokemon\Npc\NpcProfessor.h" />
+    <ClInclude Include="Pokemon\Pokemon\PokemonBase.h" />
     <ClInclude Include="ProfileManager.h" />
     <ClInclude Include="Render\BlendState.h" />
     <ClInclude Include="Render\DepthStencilState.h" />
