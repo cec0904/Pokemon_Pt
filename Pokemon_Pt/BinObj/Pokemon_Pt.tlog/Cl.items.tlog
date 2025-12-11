@@ -57,6 +57,11 @@ E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Pokemon\Npc\NpcBase.cpp;E:\Pokemon\Poke
 E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Pokemon\Npc\NpcHiker.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\NpcHiker.obj
 E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Pokemon\Npc\NpcProfessor.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\NpcProfessor.obj
 E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Pokemon\Pokemon\PokemonBase.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\PokemonBase.obj
+E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Pokemon\Pokemon\Pokemon_ChimChar.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\Pokemon_ChimChar.obj
+E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Pokemon\Pokemon\Pokemon_PipLup.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\Pokemon_PipLup.obj
+E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Pokemon\Pokemon\Pokemon_TurtWig.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\Pokemon_TurtWig.obj
+E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Pokemon\UI\Pedometer.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\Pedometer.obj
+E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Pokemon\UI\Poketch.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\Poketch.obj
 E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\ProfileManager.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\ProfileManager.obj
 E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Render\BlendState.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\BlendState.obj
 E:\Pokemon\Pokemon_Pt\Pokemon_Pt\include\Render\DepthStencilState.cpp;E:\Pokemon\Pokemon_Pt\Pokemon_Pt\BinObj\DepthStencilState.obj

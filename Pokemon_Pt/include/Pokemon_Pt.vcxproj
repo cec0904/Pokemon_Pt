@@ -203,6 +203,8 @@
     <ClCompile Include="Pokemon\Pokemon\Pokemon_ChimChar.cpp" />
     <ClCompile Include="Pokemon\Pokemon\Pokemon_PipLup.cpp" />
     <ClCompile Include="Pokemon\Pokemon\Pokemon_TurtWig.cpp" />
+    <ClCompile Include="Pokemon\UI\Pedometer.cpp" />
+    <ClCompile Include="Pokemon\UI\Poketch.cpp" />
     <ClCompile Include="ProfileManager.cpp" />
     <ClCompile Include="Render\BlendState.cpp" />
     <ClCompile Include="Render\DepthStencilState.cpp" />
@@ -330,6 +332,8 @@
     <ClInclude Include="Pokemon\Pokemon\Pokemon_ChimChar.h" />
     <ClInclude Include="Pokemon\Pokemon\Pokemon_PipLup.h" />
     <ClInclude Include="Pokemon\Pokemon\Pokemon_TurtWig.h" />
+    <ClInclude Include="Pokemon\UI\Pedometer.h" />
+    <ClInclude Include="Pokemon\UI\Poketch.h" />
     <ClInclude Include="ProfileManager.h" />
     <ClInclude Include="Render\BlendState.h" />
     <ClInclude Include="Render\DepthStencilState.h" />

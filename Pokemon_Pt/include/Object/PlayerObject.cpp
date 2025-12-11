@@ -28,6 +28,9 @@
 #include "../Scene/SceneUIManager.h"
 #include "../UI/Common/ProgressBar.h"
 
+#include "../Pokemon/UI/Poketch.h"
+#include "../Pokemon/UI/Pedometer.h"
+
 
 CPlayerObject::CPlayerObject()
 	: CSceneObject()
@@ -56,6 +59,8 @@ bool CPlayerObject::Init()
 	mScene->GetUIManager()->AddToViewport(MainWidget);
 	mHPBar = MainWidget->HPBar;
 
+	class CPedometer* Pedometer = mScene->GetUIManager()->CreateWidget<CPedometer>("Pedometer");
+	mScene->GetUIManager()->AddToViewport(Pedometer);
 
 	/*class CPedometer* Pedometer = mScene->GetUIManager()->CreateWidget<CPedometer>("Pedometer");
 	mScene->GetUIManager()->AddToViewport(Pedometer);*/

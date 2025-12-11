@@ -232,6 +232,12 @@
     <Filter Include="Pokemon\01.Pokemon\01.List">
       <UniqueIdentifier>{37692a63-9f7f-4f7a-b499-6d9fc5b9b988}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pokemon\04.UI\01.Poketch">
+      <UniqueIdentifier>{a6395cf5-504a-4971-aa70-363b1cd38286}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pokemon\04.UI\02.Battle">
+      <UniqueIdentifier>{2d1bc74a-82f3-4a11-8d05-1c9c9760a8f5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -578,6 +584,12 @@
     </ClCompile>
     <ClCompile Include="Pokemon\Pokemon\Pokemon_TurtWig.cpp">
       <Filter>Pokemon\01.Pokemon\01.List</Filter>
+    </ClCompile>
+    <ClCompile Include="Pokemon\UI\Pedometer.cpp">
+      <Filter>Pokemon\04.UI\01.Poketch</Filter>
+    </ClCompile>
+    <ClCompile Include="Pokemon\UI\Poketch.cpp">
+      <Filter>Pokemon\04.UI\01.Poketch</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -970,6 +982,12 @@
     </ClInclude>
     <ClInclude Include="Pokemon\Pokemon\Pokemon_TurtWig.h">
       <Filter>Pokemon\01.Pokemon\01.List</Filter>
+    </ClInclude>
+    <ClInclude Include="Pokemon\UI\Pedometer.h">
+      <Filter>Pokemon\04.UI\01.Poketch</Filter>
+    </ClInclude>
+    <ClInclude Include="Pokemon\UI\Poketch.h">
+      <Filter>Pokemon\04.UI\01.Poketch</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -144,8 +144,8 @@ void CImage::Update(float DeltaTime)
 		}
 	}
 
-	if (mBrush.AnimationEnable)
-		CLog::PrintLog(to_string(mBrush.Frame));
+	//if (mBrush.AnimationEnable)
+		//CLog::PrintLog(to_string(mBrush.Frame));
 }
 
 void CImage::Render()
